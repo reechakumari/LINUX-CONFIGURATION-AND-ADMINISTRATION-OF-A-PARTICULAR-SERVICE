@@ -1,0 +1,25 @@
+Step 1: Installing HTTPD rpm from yum repository
+Step 2: Change the basic set-up required for the configuration are following:
+        Edit the httpd.conf file to change the port Apache listens on.
+        The file httpd.conf. This file is to be found in vim /etc/httpd/conf/httpd.conf
+        I) path of HTML page 
+        II) User and Group of Apache
+        III) Server root path 
+Step 3: Start service of the httpd rpm and enable it.
+        I) Service start  
+Step 4: Create webpages to the path /var/www/html
+        I) Path of webpages
+        
+        commands:
+        	Yum install httpd                 //to install httpd package
+        	Vi /etc/httpd/conf/httpd.conf     //path of configuration file of httpd
+        	Systemctl start httpd             // to start httpd service 
+        	Vim var/www/html                  //path where html file created by default
+        	Vim /var/www/cgi-bin              //path where python-based file created by default
+        	Systemctl enable httpd            // to enable httpd service
+        	Systemctl status httpd            // to check status of httpd service
+        	Systemctl restart httpd           // to restart httpd service
+        	Systemctl stop httpd           // to stop httpd service
+
+        	Systemctl stop firewalld          // to stop firewall
+        	Iptables –F                      
