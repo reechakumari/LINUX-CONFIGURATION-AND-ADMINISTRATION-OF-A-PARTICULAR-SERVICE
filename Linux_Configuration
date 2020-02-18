@@ -1,0 +1,26 @@
+The configuration of Linux is done with the help of the cd or image which is the basic requirements for any operating system. The configuration is done with the help of following steps:
+
+Steps: 1.	Open VMware go to select new option, add name, types, version for the OS.
+       2.	Selecting Hard-disk
+       3.	Selecting image of Linux operating system of REDHAT version 8.
+       4.	Before Installing giving priorities to the Hard-disk.
+       5.	Selecting the network set-up and enable the NIC card.
+       6.	Selecting the Interface of the OS to interact with the users.
+       7.	Select Language
+       8.	Start Installing and doing some basic set-up as well.
+       9.	Set root password and username along with password.
+       10.	Configuring yum repository and commands to configure.
+       
+       vi /etc/yum.repos.d/filename.repo  //create file configure yum repository
+       
+       [name]
+       baseurl=file:///rpm_path
+       gpgcheck=0
+       
+       [name1]
+       baseurl=file:///rpm_path1
+       gpgcheck=0
+       
+       [name2]
+       baseurl=file:///rpm_path2
+       gpgcheck=0
